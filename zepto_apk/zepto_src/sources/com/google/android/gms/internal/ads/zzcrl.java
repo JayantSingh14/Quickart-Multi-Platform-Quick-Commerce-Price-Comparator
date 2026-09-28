@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: classes4.dex */
+final /* synthetic */ class zzcrl implements zzgpr {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final /* synthetic */ zzcrl f26962a = new zzcrl();
+
+    @Override // com.google.android.gms.internal.ads.zzgpr
+    public final /* synthetic */ Object apply(Object obj) {
+        return "failure_click_attok";
+    }
+}

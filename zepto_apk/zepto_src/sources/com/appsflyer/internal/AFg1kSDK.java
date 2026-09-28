@@ -1,0 +1,21 @@
+package com.appsflyer.internal;
+
+import android.content.Context;
+import android.os.Build;
+import com.appsflyer.AFLogger;
+
+/* loaded from: classes.dex */
+public final class AFg1kSDK {
+    public static boolean getMediationNetwork(Context context) throws ClassNotFoundException {
+        if (Build.VERSION.SDK_INT >= 26) {
+            return context.getPackageManager().isInstantApp();
+        }
+        try {
+            context.getClassLoader().loadClass("com.google.android.instantapps.supervisor.InstantAppsRuntime");
+            return true;
+        } catch (ClassNotFoundException e2) {
+            AFLogger.afErrorLogForExcManagerOnly("InstantAppsRuntime not found", e2, true);
+            return false;
+        }
+    }
+}

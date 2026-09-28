@@ -1,0 +1,107 @@
+{
+  "manifest_version": 3,
+  "name": "Quickart – Quick Commerce Price Comparator",
+  "version": "1.1",
+  "description": "Compare prices across Zepto, Blinkit, and Swiggy Instamart instantly.",
+
+  "permissions": [
+    "cookies",
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "host_permissions": [
+    "https://*.zepto.com/*",
+    "https://bff-gateway.zepto.com/*",
+    "https://*.blinkit.com/*",
+    "https://www.swiggy.com/*",
+    "https://www.flipkart.com/*",
+    "https://*.flipkart.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.zepto.com/*", "https://zepto.com/*"],
+      "js": ["content/zepto.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.zepto.com/*", "https://zepto.com/*"],
+      "js": ["content/zepto-bridge.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": ["https://blinkit.com/*", "https://www.blinkit.com/*"],
+      "js": ["content/blinkit.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://blinkit.com/*", "https://www.blinkit.com/*"],
+      "js": ["content/blinkit-bridge.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": ["https://www.swiggy.com/*"],
+      "js": ["content/instamart.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.swiggy.com/*"],
+      "js": ["content/instamart-bridge.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "http://localhost:5173/*",
+        "http://localhost:3000/*",
+        "http://localhost:8080/*"
+      ],
+      "js": ["content/webpage-bridge.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "Quickart",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

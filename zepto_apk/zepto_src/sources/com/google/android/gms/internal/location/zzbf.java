@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.location;
+
+import com.google.android.gms.common.api.Api;
+import com.google.android.gms.common.api.internal.RemoteCall;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* loaded from: classes4.dex */
+public final /* synthetic */ class zzbf implements RemoteCall {
+    @Override // com.google.android.gms.common.api.internal.RemoteCall
+    public final void accept(Object obj, Object obj2) {
+        Api api = zzbp.f36637a;
+        ((zzda) obj).i(null, (TaskCompletionSource) obj2);
+        throw null;
+    }
+}

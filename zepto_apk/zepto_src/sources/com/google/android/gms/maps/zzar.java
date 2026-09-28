@@ -1,0 +1,21 @@
+package com.google.android.gms.maps;
+
+import com.google.android.gms.maps.internal.IStreetViewPanoramaDelegate;
+import com.google.android.gms.maps.internal.zzbs;
+
+/* loaded from: classes4.dex */
+final class zzar extends zzbs {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ OnStreetViewPanoramaReadyCallback f38606a;
+
+    public zzar(OnStreetViewPanoramaReadyCallback onStreetViewPanoramaReadyCallback) {
+        this.f38606a = onStreetViewPanoramaReadyCallback;
+    }
+
+    @Override // com.google.android.gms.maps.internal.zzbt
+    public final void g7(IStreetViewPanoramaDelegate iStreetViewPanoramaDelegate) {
+        new StreetViewPanorama(iStreetViewPanoramaDelegate);
+        this.f38606a.a();
+    }
+}

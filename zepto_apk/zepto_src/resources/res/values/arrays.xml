@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com.google.firebase.crashlytics.build_ids_arch">
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>arm</item>
+        <item>x86</item>
+        <item>x86</item>
+        <item>x86</item>
+        <item>x86</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>aarch64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+        <item>x86_64</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_build_id">
+        <item>6fdf37d594eb9e8f</item>
+        <item>bc1f23c0c45e1c7ad496193c948e61d7f39b15e9</item>
+        <item>b173eb5eb81feab46ad25ecced0664b7da0ada0b</item>
+        <item>75058aed7ebf14dfad33a102d13a74203ef74aa0</item>
+        <item>68ecb495330b4987</item>
+        <item>17bd6fa76abc96886eca413e322f2cc34f70ff6a</item>
+        <item>7aea7e5e26c88ba854ff9e8e2a73b2ef125b18d0</item>
+        <item>467926dd98cb483588cbf3115eeb6d8827a13031</item>
+        <item>d691fd02c637f606</item>
+        <item>e438f6554af1d86b210a05412e96c4251e570157</item>
+        <item>6783a7f3a0d9c67c55a74cadc441ed55aaa493da</item>
+        <item>a688ba1023843805cf12a52a2cd04fe85467441c</item>
+        <item>0a39c7409d4d9650</item>
+        <item>2f4b0da170c8a1af5bf245a5dba7c30a6974f2f2</item>
+        <item>734ab2eaa203afbb89147d313e46146617bd1a2c</item>
+        <item>85fe403a83095ffe30f708368ae527365a928643</item>
+    </array>
+    <array name="com.google.firebase.crashlytics.build_ids_lib">
+        <item>libjsi.so</item>
+        <item>libfbjni.so</item>
+        <item>libc++_shared.so</item>
+        <item>libcppJsiModules.so</item>
+        <item>libjsi.so</item>
+        <item>libfbjni.so</item>
+        <item>libc++_shared.so</item>
+        <item>libcppJsiModules.so</item>
+        <item>libjsi.so</item>
+        <item>libfbjni.so</item>
+        <item>libc++_shared.so</item>
+        <item>libcppJsiModules.so</item>
+        <item>libjsi.so</item>
+        <item>libfbjni.so</item>
+        <item>libc++_shared.so</item>
+        <item>libcppJsiModules.so</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+</resources>

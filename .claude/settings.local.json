@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cdn.zeptonow.com)",
+      "Bash(sed -n '43480,43800p' /Users/anantpratapsingh/Downloads/extension/flipkartminutesresponse.html)",
+      "Read(//tmp/**)",
+      "Bash(ls -la /Users/anantpratapsingh/Downloads/extension/crawler-service/sku-scraper/*.js)",
+      "Bash(ls -la /Users/anantpratapsingh/Downloads/extension/crawler-service/web-interface/*.js)",
+      "Bash(node:*)",
+      "Bash(ls /Users/anantpratapsingh/Downloads/extension/*.xapk)",
+      "Bash(ls -lh /Users/anantpratapsingh/Downloads/extension/*.xapk)",
+      "Read(//Users/anantpratapsingh/Downloads/extension mkdir -p zepto_xapk cp zepto.xapk zepto_xapk/**)",
+      "Bash(unzip -o zepto.zip)",
+      "Bash(export PATH=\"$PATH:$HOME/Library/Android/sdk/platform-tools\")",
+      "Bash(adb -e shell \"iptables -t nat -L OUTPUT --line-numbers 2>/dev/null | head -20\")",
+      "Bash(adb -e shell \"whoami && id\")",
+      "Bash(adb -e shell \"settings delete global http_proxy && settings delete global global_http_proxy_host && settings delete global global_http_proxy_port\")",
+      "Bash(adb -e shell \":*)",
+      "Bash(pkill -f mitmdump)",
+      "Bash(lsof -ti:8080)",
+      "Bash(xargs kill:*)",
+      "Bash(python3 -m mitmproxy --version)",
+      "Bash(pip3 show:*)",
+      "Bash(adb devices:*)",
+      "Bash(adb -e root)",
+      "Bash(adb -e shell \"whoami\")",
+      "Bash(tee /tmp/zepto_capture_run.log)",
+      "WebSearch"
+    ]
+  }
+}

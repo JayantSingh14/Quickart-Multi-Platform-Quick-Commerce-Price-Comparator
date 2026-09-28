@@ -1,0 +1,188 @@
+.card {
+  position: relative;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  border-color: var(--border-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.topRank {
+  border-color: rgba(16, 185, 129, 0.25);
+  background: linear-gradient(
+    to bottom right,
+    rgba(16, 185, 129, 0.04),
+    var(--surface-1)
+  );
+}
+
+.bestBadge {
+  position: absolute;
+  top: -1px;
+  right: 12px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: var(--primary);
+  color: #0d0d0d;
+  padding: 2px 8px;
+  border-radius: 0 0 6px 6px;
+}
+
+.inner {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* Image */
+.imgWrap {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.imgPlaceholder {
+  color: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Product info */
+.info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-1);
+  line-height: 1.35;
+  flex: 1;
+  min-width: 0;
+}
+
+.weightBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--primary-dim);
+  color: var(--primary);
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Platform pills row */
+.pricesRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.platformPill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.78rem;
+}
+
+.bestPill {
+  /* Colors applied via inline style in ProductGroup.jsx */
+}
+
+.platformName {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--text-2);
+}
+
+.bestPrice {
+  color: var(--text-1);
+  font-size: 0.88rem;
+}
+
+.bestStar {
+  color: var(--primary);
+  font-size: 0.75rem;
+}
+
+.perUnit {
+  font-size: 0.74rem;
+  color: var(--text-3);
+  padding: 4px 8px;
+  background: var(--surface-0);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-left: 2px;
+}
+
+.etaLabel {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--text-3);
+  background: var(--surface-0);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin-left: 2px;
+  white-space: nowrap;
+}
+
+.etaUnavailable {
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.2);
+  background: rgba(248, 113, 113, 0.06);
+}
+
+.unavailablePill {
+  opacity: 0.45;
+}
+
+.unavailablePrice {
+  text-decoration: line-through;
+  color: var(--text-3);
+}

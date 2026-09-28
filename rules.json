@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://www.zepto.com"
+        },
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://www.zepto.com/"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "bff-gateway.zepto.com",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://blinkit.com"
+        },
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://blinkit.com/"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "blinkit.com/v1/",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "origin",
+          "operation": "set",
+          "value": "https://www.swiggy.com"
+        },
+        {
+          "header": "referer",
+          "operation": "set",
+          "value": "https://www.swiggy.com/instamart"
+        },
+        {
+          "header": "sec-fetch-site",
+          "operation": "set",
+          "value": "same-origin"
+        },
+        {
+          "header": "sec-fetch-mode",
+          "operation": "set",
+          "value": "cors"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "www.swiggy.com/api/instamart/",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]

@@ -1,0 +1,8 @@
+package com.google.gson.internal;
+
+/* loaded from: classes4.dex */
+public class TroubleshootingGuide {
+    public static String a(String str) {
+        return "https://github.com/google/gson/blob/main/Troubleshooting.md#".concat(str);
+    }
+}

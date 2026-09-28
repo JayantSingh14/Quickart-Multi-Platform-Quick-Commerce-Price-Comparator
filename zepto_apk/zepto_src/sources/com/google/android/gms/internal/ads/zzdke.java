@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: classes4.dex */
+public final class zzdke implements zzijg {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final zzijf f27846a;
+
+    public zzdke(zzijf zzijfVar) {
+        this.f27846a = zzijfVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzijv
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzdij((zzdjp) this.f27846a.zzb(), zzcdo.f25987f);
+    }
+}

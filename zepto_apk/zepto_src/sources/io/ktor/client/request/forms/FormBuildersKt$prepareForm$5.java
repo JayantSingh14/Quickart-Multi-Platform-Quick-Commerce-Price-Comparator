@@ -1,0 +1,18 @@
+package io.ktor.client.request.forms;
+
+import io.ktor.client.request.HttpRequestBuilder;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+
+@Metadata
+/* loaded from: classes3.dex */
+final class FormBuildersKt$prepareForm$5 extends Lambda implements Function1<HttpRequestBuilder, Unit> {
+    @Override // kotlin.jvm.functions.Function1
+    public final Object invoke(Object obj) {
+        Intrinsics.checkNotNullParameter((HttpRequestBuilder) obj, "$this$null");
+        return Unit.f53572a;
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "isEnabled": true,
+  "isInternalOnly": false,
+  "initialPeriodicity": 24,
+  "isTimeRangeEnabled": true,
+  "isRolloutBasis": true,
+  "rolloutPercentage": 50,
+  "cohortWisePeriodicity": [
+    {
+      "activityLevel": 1,
+      "lastAccessTimeRange": {
+        "minTime": 0,
+        "maxTime": 72
+      },
+      "workerPeriodicity": 24
+    },
+    {
+      "activityLevel": 2,
+      "lastAccessTimeRange": {
+        "minTime": 72,
+        "maxTime": 168
+      },
+      "workerPeriodicity": 48
+    },
+    {
+      "activityLevel": 3,
+      "lastAccessTimeRange": {
+        "minTime": 168
+      },
+      "workerPeriodicity": null
+    }
+  ]
+}

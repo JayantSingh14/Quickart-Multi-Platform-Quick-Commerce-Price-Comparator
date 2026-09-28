@@ -1,0 +1,11 @@
+package androidx.collection;
+
+import kotlin.Metadata;
+
+@Metadata
+/* loaded from: classes3.dex */
+public final class ObjectLongMapKt {
+    static {
+        new MutableObjectLongMap(0);
+    }
+}

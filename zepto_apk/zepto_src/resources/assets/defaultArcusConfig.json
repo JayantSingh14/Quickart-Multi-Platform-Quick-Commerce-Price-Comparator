@@ -1,0 +1,5 @@
+{
+  "syncInterval": 86400000,
+  "maxSizeOfAppDetailsList": 0,
+  "timeOutInMillisForDeviceDetails": 500
+}

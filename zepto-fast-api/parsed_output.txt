@@ -1,0 +1,13 @@
+Found 3 unique relevant endpoints
+=========================================
+Endpoint: GET https://bff-gateway.zepto.com/lms/api/v2/get_page?latitude=12.96902&longitude=77.75395&page_type=HOME&version=v2&show_new_eta_banner=true&page_size=3&enforce_platform_type=DESKTOP
+Important Headers: { tenant: 'ZEPTO' }
+Sample Response: {"endOfPage":false,"storeServiceableResponse":{"isNightlyStore":false,"secondaryStoreIds":["0059ff6a-7eb0-477a-a7f5-69256f2c444b"],"serviceable":true,"storeId":"b4dc8d65-ed2e-4142-81b6-373982b13500"},"pageLayout":{"bottomNav":{"default":"HOME","items":[{"activeIcon":"https://ik.imagekit.io/jupdt2k6txi/inventory/banner/2ff6905e-f04c-41c3-8295-3df72bfff080.svg","activeIconV2":"https://ik.imagekit.io/jupdt2k6txi/inventory/banner/2ff6905e-f04c-41c3-8295-3df72bfff080.svg","deeplinkUrl":"https://shop.
+=========================================
+Endpoint: GET https://www.zepto.com/cn/fruits-vegetables/fruits-vegetables/cid/64374cfe-d06f-4a01-898e-c07c46462c36/scid/414e9381-3ba3-4632-92e0-00fc29304900?_rsc=1otn0
+Important Headers: {}
+Sample Response: "Not JSON or Failed to parse"
+=========================================
+Endpoint: GET https://www.facebook.com/tr/?id=932680588440323&ev=PageView&dl=https%3A%2F%2Fwww.zepto.com%2F&rl=&if=false&ts=1774901797818&sw=1280&sh=720&v=2.9.285&r=stable&ec=0&o=4126&fbp=fb.1.1774901797628.442006557913497433&ler=empty&pmd[title]=Welcome%20to%20Zepto%2C%20India%27s%20Fastest%20Online%20Grocery%20Delivery%20App!%20Get%20all%20your%20groceries%20delivered%20to%20you%20in%20minutes.%20%7C%20https%3A%2F%2Fwww.zepto.com&pmd[locale]=en&pmd[description]=Zepto%20is%20your%20next-door%20quick%20commerce%20app%2C%20delivering%20online%20groceries%2Cfruits%2Cvegetables%2C%20personal%20care%2C%20electronics%20%26%20much%20more%20to%20you%20in%20just%20minutes.&pmd[keywords]=online%20grocery%2C%20same-day%20delivery%2C%20grocery%20pickup%2C%20online%20grocery%20delhi%2C%20online%20grocery%20bangalore%2C%20online%20grocery%20mumbai%2C%20online%20grocery%20hyderabad%2C%20online%20grocery%20shopping%2C%20online%20grocery%20store%2C%20online%20store%2C%20online%20grocery%20shopping%20india%2C%20buy%20groceries%20online%2C%20online%20vegetable%20store%2C%20food%20shopping%20online&plt=470.70000000298023&it=1774901797471&coo=false&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET
+Important Headers: {}
+Sample Response: "Not JSON or Failed to parse"

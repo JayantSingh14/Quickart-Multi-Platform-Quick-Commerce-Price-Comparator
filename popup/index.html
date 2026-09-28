@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quickart</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🛒</span>
+      <span class="logo-text">Quickart</span>
+    </div>
+    <button class="cart-btn" id="cartBtn" title="View cart">
+      <span class="cart-icon">🧺</span>
+      <span class="cart-badge hidden" id="cartBadge">0</span>
+    </button>
+  </header>
+
+  <!-- Connection banner -->
+  <div class="connect-banner hidden" id="connectBanner">
+    <span class="connect-icon">⚠️</span>
+    <span class="connect-msg" id="connectMsg">Connect to a platform</span>
+    <div style="display:flex; gap:8px;">
+      <a class="connect-link" href="https://www.zepto.com" target="_blank">Zepto ↗</a>
+      <a class="connect-link" href="https://blinkit.com" target="_blank">Blinkit ↗</a>
+      <a class="connect-link" href="https://www.swiggy.com/instamart" target="_blank">Instamart ↗</a>
+      <a class="connect-link" href="https://www.flipkart.com/flipkart-minutes" target="_blank">Flipkart ↗</a>
+    </div>
+  </div>
+
+  <!-- Search bar -->
+  <div class="search-wrap">
+    <input
+      type="text"
+      id="searchInput"
+      class="search-input"
+      placeholder="Search across Zepto, Blinkit, Instamart, Flipkart…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <button class="search-btn" id="searchBtn" title="Search">
+      <span>🔍</span>
+    </button>
+  </div>
+
+  <!-- Platform chips -->
+  <div class="platform-chips">
+    <span class="chip active" data-platform="all">All</span>
+    <span class="chip" data-platform="zepto">Zepto</span>
+    <span class="chip" data-platform="blinkit">Blinkit</span>
+    <span class="chip" data-platform="swiggy">Instamart</span>
+    <span class="chip" data-platform="flipkart">Flipkart</span>
+  </div>
+
+  <!-- Main views -->
+  <main id="mainView">
+
+    <!-- Empty / welcome state -->
+    <div class="state-view" id="welcomeState">
+      <div class="state-emoji">🥦</div>
+      <p class="state-title">Compare prices instantly</p>
+      <p class="state-sub">Search for any grocery item to see the best prices across quick commerce platforms.</p>
+    </div>
+
+    <!-- Loading state -->
+    <div class="state-view hidden" id="loadingState">
+      <div class="spinner"></div>
+      <p class="state-sub">Searching…</p>
+    </div>
+
+    <!-- No results state -->
+    <div class="state-view hidden" id="emptyState">
+      <div class="state-emoji">🔍</div>
+      <p class="state-title">No results found</p>
+      <p class="state-sub" id="emptyStateMsg">Try a different search term.</p>
+    </div>
+
+    <!-- Results list -->
+    <div class="hidden" id="resultsView">
+      <div class="results-meta" id="resultsMeta"></div>
+      <div id="resultsList"></div>
+    </div>
+
+    <!-- Cart view -->
+    <div class="hidden" id="cartView">
+      <div class="cart-header">
+        <button class="back-btn" id="backBtn">← Back</button>
+        <h2 class="cart-title">Your Cart</h2>
+        <button class="clear-cart-btn" id="clearCartBtn">Clear</button>
+      </div>
+      <div id="cartList"></div>
+      <div class="cart-summary" id="cartSummary"></div>
+    </div>
+
+  </main>
+
+  <!-- Debug panel (hidden by default, shown via URL hash #debug) -->
+  <div class="hidden" id="debugPanel" style="padding:10px 12px;font-size:11px;background:#1e293b;color:#94a3b8;max-height:160px;overflow-y:auto;font-family:monospace;white-space:pre-wrap;word-break:break-all;"></div>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.auth;
+
+import android.util.Log;
+import com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse;
+import java.io.UnsupportedEncodingException;
+
+/* loaded from: classes4.dex */
+public abstract class zzbz extends FastSafeParcelableJsonResponse {
+    @Override // com.google.android.gms.common.server.response.FastSafeParcelableJsonResponse
+    public final byte[] toByteArray() {
+        try {
+            return toString().getBytes("UTF-8");
+        } catch (UnsupportedEncodingException e2) {
+            Log.e("AUTH", "Error serializing object.", e2);
+            return null;
+        }
+    }
+}

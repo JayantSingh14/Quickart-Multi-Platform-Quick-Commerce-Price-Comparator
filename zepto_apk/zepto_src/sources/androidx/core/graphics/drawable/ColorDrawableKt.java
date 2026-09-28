@@ -1,0 +1,8 @@
+package androidx.core.graphics.drawable;
+
+import kotlin.Metadata;
+
+@Metadata
+/* loaded from: classes3.dex */
+public final class ColorDrawableKt {
+}

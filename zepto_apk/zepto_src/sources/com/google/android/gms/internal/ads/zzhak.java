@@ -1,0 +1,8 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: classes4.dex */
+public interface zzhak {
+    boolean zza();
+
+    zzgzq zzb();
+}

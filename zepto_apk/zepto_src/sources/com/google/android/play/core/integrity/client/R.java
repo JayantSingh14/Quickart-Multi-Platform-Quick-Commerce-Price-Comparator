@@ -1,0 +1,5 @@
+package com.google.android.play.core.integrity.client;
+
+/* loaded from: classes4.dex */
+public final class R {
+}

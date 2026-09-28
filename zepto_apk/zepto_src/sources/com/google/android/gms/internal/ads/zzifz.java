@@ -1,0 +1,56 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: classes4.dex */
+public final class zzifz extends zziar implements zzicd {
+    private static final zzifz zzd;
+    private static volatile zzick zze;
+    private int zza;
+    private String zzb = "";
+    private long zzc;
+
+    static {
+        zzifz zzifzVar = new zzifz();
+        zzd = zzifzVar;
+        zziar.x(zzifz.class, zzifzVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zziar
+    public final Object y(zziaq zziaqVar, zziar zziarVar) {
+        zzick zziamVar;
+        int iOrdinal = zziaqVar.ordinal();
+        if (iOrdinal == 0) {
+            return (byte) 1;
+        }
+        if (iOrdinal == 2) {
+            return new zzico(zzd, "\u0001\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001ဈ\u0000\u0002ဂ\u0001", new Object[]{"zza", "zzb", "zzc"});
+        }
+        if (iOrdinal == 3) {
+            return new zzifz();
+        }
+        if (iOrdinal == 4) {
+            return new zzify(zzd);
+        }
+        if (iOrdinal == 5) {
+            return zzd;
+        }
+        if (iOrdinal != 6) {
+            throw null;
+        }
+        zzick zzickVar = zze;
+        if (zzickVar != null) {
+            return zzickVar;
+        }
+        synchronized (zzifz.class) {
+            try {
+                zziamVar = zze;
+                if (zziamVar == null) {
+                    zziamVar = new zziam(zzd);
+                    zze = zziamVar;
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return zziamVar;
+    }
+}

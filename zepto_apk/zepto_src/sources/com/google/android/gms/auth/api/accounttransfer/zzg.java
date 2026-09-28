@@ -1,0 +1,16 @@
+package com.google.android.gms.auth.api.accounttransfer;
+
+import android.os.Parcel;
+import com.google.android.gms.internal.auth.zzau;
+
+/* loaded from: classes4.dex */
+final class zzg extends zzl {
+    @Override // com.google.android.gms.auth.api.accounttransfer.zzl
+    public final void a(zzau zzauVar) {
+        zzf zzfVar = new zzf(this, this);
+        Parcel parcelG = zzauVar.g();
+        com.google.android.gms.internal.auth.zzc.d(parcelG, zzfVar);
+        parcelG.writeInt(0);
+        zzauVar.z0(7, parcelG);
+    }
+}
